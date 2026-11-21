@@ -76,6 +76,7 @@ Scalability 的工作不是把技术问题当作一次性的功能 Bug 修掉，
   - 新瓶颈：加完资源后瓶颈会移到哪里？
   - 成本：单位吞吐、延迟改善和每单位资源的代价是什么？
 - **文献引用**：DDIA Ch.1 的 scale up / scale out 与 shared-nothing；模式层的 Competing Consumers、Follower Reads、Pipes and Filters、Fixed/Key-Range Partitions 和 Sharding 用实例、副本、filter、分区证明可复制单元的具体形态。[DDIA 核心章节](references/2026-11-21-DDIA核心章节.md)；[分布式 Scalability 模式](references/2026-11-21-分布式系统Scalability核心模式.md)；[Cloud Scalability 模式](references/2026-11-21-Scalability核心模式.md)
+- **术语依据**：`instance / instance type` 用于承载资源并具有不同规格的个体，`scale unit / 扩容单元` 用于描述一起伸缩的组件和扩容增量，`stamp / cell / service unit` 用于成组副本。`node` 更适合基础设施中的节点语境，不适合作为所有形态（进程、容器、虚拟机）的统一术语。[资源单元术语来源](references/2026-11-21-资源单元术语来源.md)
 
 ### 5. 四种扩展路径
 
